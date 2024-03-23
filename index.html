@@ -20,37 +20,43 @@
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" id="brand" href="#">
-                    <span class="ml-4"><b><span class="home__title-color">All In Studio
-                        
-                    </span></b></span>
-                </a>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><span class="home__title-color" style="margin-left: 5px; cursor: default; text-shadow: 10px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >All In Studio</span></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end justify-content-sm-end" id="navbarNav">
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><div class="text-muted"><span class="home__title-color">All In Studio</span></div>  </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvasNavbar-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+    
+                    </div>
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-
+                    
+                
+                    
             </nav>
            
         </header>
@@ -185,8 +191,8 @@
 
                 <div class="contact__container bd-grid">
                     <form action="https://formsubmit.co/b9f375c8211fa71477ac47e4b6006811" class="contact__form" target="_blank" method="post">
-                        <input type="hidden" name="_next" value="https://b9f375c8211fa71477ac47e4b6006811/Thank_you.html">
                         <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://https://yworry.github.io/Software/thanks.html">
                         <input type="text" placeholder="Name" name="name" class="contact__input" required>
                         <input type="email" placeholder="Email" name="email" class="contact__input" required>
                         <input type="text" name="subject"  class="contact__input" placeholder="subject" required>
@@ -215,6 +221,8 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
