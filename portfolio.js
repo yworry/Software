@@ -51,6 +51,46 @@ const sr = ScrollReveal({
 //     reset: true
 });
 
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+    
+    // Collect form data
+    var formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    };
+    
+    // You can send the formData to your server using AJAX
+    // Example:
+    /*
+    fetch('/send-feedback', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Feedback submitted successfully!');
+            // Optionally, clear the form fields
+        } else {
+            alert('Error submitting feedback. Please try again later.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error submitting feedback. Please try again later.');
+    });
+    */
+    
+    // For demonstration purposes, log the formData to the console
+    console.log(formData);
+});
+
+
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
