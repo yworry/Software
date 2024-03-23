@@ -15,6 +15,7 @@
 
 
         <title>Portfolio website</title>
+        <link rel="icon" type="image/x-icon" href="media/img/favicon (2).ico">
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -183,12 +184,16 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="https://formsubmit.co/feedbackyworry99@gmail.com" method="POST">
-                        <input type="text" name="name" required>
-                        <input type="email" name="email" required>
-                        <button type="submit">Send</button>
-                   </form>
-                </div>
+                    <form action="https://formsubmit.co/b9f375c8211fa71477ac47e4b6006811" class="contact__form" target="_blank" method="post">
+                        <input type="hidden" name="_next" value="https://b9f375c8211fa71477ac47e4b6006811/Thank_you.html">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" placeholder="Name" name="name" class="contact__input" required>
+                        <input type="email" placeholder="Email" name="email" class="contact__input" required>
+                        <input type="text" name="subject"  class="contact__input" placeholder="subject" required>
+                        <textarea name="text" id="" cols="0" rows="10" class="contact__input" placeholder="Feedback" required></textarea>
+                        <input type="submit" value="Send" class="contact__button button">
+                    </form>
+
             </section>
         </main>
         
@@ -210,9 +215,9 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
     </body>
