@@ -22,16 +22,16 @@
         <header class="l-header">
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><span class="home__title-color" style="margin-left: 5px; cursor: default; text-shadow: 10px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >All In Studio</span></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <a class="navbar-brand" href="#"><span class="home__title-color" style="margin-left: 5px; cursor: default; text-shadow: 10px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" ><i class='bx bxs-shopping-bags'></i> Portfolio</span></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="margin-right: 10px;">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><div class="text-muted"><span class="home__title-color" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">All In Studio</span></div>  </h5>
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><div class="text-muted"><span class="home__title-color" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></span></div>  </h5>
                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvasNavbar-body">
+                    <div class="offcanvasNavbar-body text-center">
                         <ul class="navbar-nav">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
@@ -167,14 +167,15 @@
     <div class="container">
         <section class="work section" id="projects">
             <h2 class="section-title">Projects</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                <div class="card h-100">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
                     <img src="media/img/garage (2).jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Car garage</h5>
-                        <p class="card-text">Rev up your engine and park your worries with us! Welcome to our premier car garage website, where automotive excellence meets top-notch service. From routine maintenance to expert repairs, trust us to keep your ride running smoothly. Book your spot today and experience the ultimate in automotive care.</p>
-                        <a href="projects/shopping/index 2.html " target="_blank" class="btn btn-outline-primary" style="display: block; margin: 0 auto;">View site</a>
+                        <h5 class="card-title"><span style="color: burlywood;">RX </span> Garage</h5>
+                        <p class="card-text" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> 
+                            Rev up your engine and park your worries with us! Welcome to our premier car garage website, where automotive excellence meets top-notch service. From routine maintenance to expert repairs, trust us to keep your ride running smoothly. And that's not all - looking for your next dream car? Explore our selection of quality pre-owned vehicles, meticulously inspected and ready to hit the road. Book your spot today and experience the ultimate in automotive care</p>
+                        <a href="projects/shopping/index 2.html " target="_parent" class="btn btn-outline-primary" style="display: block; margin: 0 auto;">View site</a>
                     </div>
                 </div>
                 </div>
@@ -189,13 +190,27 @@
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
-                <div class="contact__container bd-grid">
-                    <form action="https://formsubmit.co/b9f375c8211fa71477ac47e4b6006811" class="contact__form" target="_blank" method="post">
-                        <input type="text" placeholder="Name" name="name" class="contact__input" required>
-                        <input type="email" placeholder="Email" name="email" class="contact__input" required>
-                        <input type="text" name="subject"  class="contact__input" placeholder="subject" required>
-                        <textarea name="text" id="" cols="0" rows="10" class="contact__input" placeholder="Feedback" required></textarea>
-                        <input type="submit" value="Send" class="contact__button button">
+                <div class="card-1 bd-grid">
+                    <form class="form"  action="https://formsubmit.co/b9f375c8211fa71477ac47e4b6006811" target="_blank" method="post">
+                        <form class="form">
+                            <div class="group">
+                            <input placeholder="‎" type="text" required="">
+                            <label for="name">Name</label>
+                            </div>
+                        <div class="group">
+                            <input placeholder="‎" type="email" id="email" name="email" required="">
+                            <label for="email">Email</label>
+                            </div>
+                         <div class="group">
+                          <input placeholder="" type="text" id="suject" name="submit" required="">
+                          <label for="suject">Subject</label>
+                         </div>   
+                        <div class="group">
+                            <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
+                            <label for="comment">Comment</label>
+                        </div>
+                       
+                            <button type="submit">Submit</button>
                     </form>
 
             </section>

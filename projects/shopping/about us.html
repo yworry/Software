@@ -6,16 +6,24 @@
   <title>Shopping Website</title>
 
   <!-- Include Bootstrap CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <style>
      body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      background-image: url(img/about\ us.jpg);
+      background-image: url(img/about-us\ 2\ \(2\).jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+      image-rendering: pixelated;
+    }
+    @media(min-width:1200px){
+      body{
+        background-image: url(img/about-us\ 2\ \(2\).jpg);
+      }
     }
 
  .navbar-nav {
@@ -37,23 +45,24 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Yworry's <span style="color:burlywood">Garage</span></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#"><span style="color:burlywood"><i class='bx bxs-car-garage bx-border-circle bx-border-white'></i>RX</span> Garage</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index 2.html">Home</a>
+                <a class="nav-link" href="index 2.html" target="_blank">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="product.html">Products</a>
+                <a class="nav-link" href="product.html" target="_blank">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="contact.html" target="_blank
+                ">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about us.html">About us</a>
+                <a class="nav-link" href="about us.html" target="_blank">About us</a>
               </li>
             </ul>
           </div>
@@ -61,13 +70,12 @@
       </nav>
       <div class="about-us">
         <h2 style="color:rgb(165, 110, 7)">About us</h2>
-        <p style="color:white">
-            Yworry's Garage: Elevating Your Drive.
-            
-            At Yworry's Garage, we redefine automotive excellence. 
-            Our curated collection of high-end cars offers a symphony of luxury, performance, and innovation.
-             Each vehicle is a masterpiece, promising not just transportation but an experience.
-              Welcome to a world where precision meets passion. Find your perfect match at Yworry's Garage—where driving becomes an art.</p><br>
+        <p class="text"   style="color:rgb(253, 253, 251); font-size: larger; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">
+         RX Garage: Elevating Your Drive.<br>
+            At RX Garage, we redefine automotive excellence. <br>
+            Our curated collection of high-end cars offers a symphony of luxury, performance, and innovation.<br>
+             Each vehicle is a masterpiece, promising not just transportation but an experience.<br>
+              Welcome to a world where precision meets passion. Find your perfect match at RX Garage—where driving becomes an art.</p><br>
               <button  style="margin-top:20px" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseContent" aria-expanded="false" aria-controls="collapseContent">
                 See More
               </button>

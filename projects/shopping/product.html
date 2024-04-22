@@ -6,43 +6,110 @@
   <title>Shopping Website</title>
 
   <!-- Include Bootstrap CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
    <style>
  .navbar-nav {
       margin-left: auto;
+      margin-right: 15px;
     }
+    .card {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-top: 30px;
+}
+
+.card:hover {
+  transform: scale(1.04) rotate(-1deg);
+}
+.card-title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+  .card-img-top{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .card:hover > .img {
+  height: 65%;
+  filter: blur(7px);
+  animation: anim 3s infinite;
+}
+  .card-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card:hover .card-body{
+  transform: rotateX(0deg);
+}
+  
+  .card-text {
+  margin: 10px 0 0;
+  font-size: 20px;
+  color: #000000;
+  line-height: 1.4;
+}
+.card-text .price{
+  font-size:17px;
+}
+.container-card{
+  margin-top: 80px;
+}
+
    </style>
 </head>
 <body>
 
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Yworry's <span style="color:burlywood">Garage</span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="margin-bottom: 20px;">
+
+      <a class="navbar-brand "  href="#"><span style="color:burlywood"><i class='bx bxs-car-garage bx-border-circle bx-border-white'></i>RX</span> Garage</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="margin-right: 10px;">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index 2.html">Home</a>
+            <a class="nav-link" href="index 2.html" target="_blank">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="product.html">Products</a>
+            <a class="nav-link" href="product.html" target="_blank">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="contact.html" target="_blank">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about us.html">About us</a>
+            <a class="nav-link" href="about us.html" target="_blank">About us</a>
           </li>
         </ul>
       </div>
-    </div>
+   
   </nav>
 
   <!-- Product Listing -->
-  <div class="container mt-4">
+  <div class="container container-card">
     <div class="row">
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
@@ -70,7 +137,7 @@
                Mercedes-Benz vehicles offer a seamless combination of cutting-edge technology, 
                comfort, and timeless design.</p>
       
-            <p class="card-text">$180,000</p>
+            <p class="card-text price">$180,000</p>
             <a href="#" class="btn btn-primary">Add to Cart</a>
           </div>
         </div>
@@ -86,7 +153,7 @@
                Tesla cars offer zero-emission driving without compromising on performance. 
                Autopilot capabilities and over-the-air updates contribute to Tesla's reputation for cutting-edge technology.</p>
 
-            <p class="card-text">$250,000</p>
+            <p class="card-text price">$250,000</p>
             <a href="#" class="btn btn-primary">Add to Cart</a>
           </div>
         </div>
@@ -101,14 +168,14 @@
                Audi cars combine advanced technology with a smooth and comfortable ride. 
                Audi's lineup caters to a wide range of preferences, 
                from stylish sedans to powerful SUVs, embodying German engineering excellence.</p>
-            <p class="card-text">$171,000</p>
+            <p class="card-text price">$171,000</p>
             <a href="#" class="btn btn-primary">Add to Cart</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
-          <img src="img/pagani.jpg" class="card-img-top" alt="Second Product">
+          <img src="img/Pagani.jpg" class="card-img-top" alt="Second Product">
           <div class="card-body">
             <h5 class="card-title">Pagani</h5>
             <p class="card-text">The Pagani is a hypercar brand that stands at the pinnacle of automotive craftsmanship.
@@ -117,14 +184,14 @@
                cutting-edge technology, and performance that pushes the boundaries, 
                Pagani cars are a rare and exclusive experience.</p>
 
-            <p class="card-text">$7.4 million</p>
+            <p class="card-text price">$7.4 million</p>
             <a href="#" class="btn btn-primary">Add to Cart</a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
-          <img src="img/mclaren p1.jpg" class="card-img-top" alt="Second Product">
+          <img src="img/Mclaren.jpg" class="card-img-top" alt="Second Product">
           <div class="card-body">
             <h5 class="card-title">Mclaren</h5>
             <p class="card-text">McLaren cars are synonymous with precision engineering and high-performance capabilities.
@@ -132,7 +199,7 @@
                 McLaren offers a driving experience that seamlessly blends luxury and sportiness. 
                 Innovation and track-inspired design define the essence of McLaren automobiles.</p>
 
-            <p class="card-text">$1.3 million</p>
+            <p class="card-text price">$1.3 million</p>
             <a href="#" class="btn btn-primary">Add to Cart</a>
           </div>
         </div>
@@ -140,7 +207,7 @@
     </div>
   </div>
   
-
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
