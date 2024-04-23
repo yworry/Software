@@ -15,7 +15,7 @@ showMenu('nav-toggle','nav-menu')
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
+    const navMenu = document.getElementById('nav-item')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show')
 }
