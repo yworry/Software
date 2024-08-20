@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navrbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" id="nav-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Will's Home</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a href="#home" class="nav__link">
+                        <i class='bx bx-home-alt nav__icon'></i>
+                        <span class="nav__name">Home</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="About Us.html" class="nav__link ">
+                        <i class='bx bx-user nav__icon'></i>
+                        <span class="nav__name">About</span>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="work.html" class="nav__link">
+                        <i class='bx bx-wrench nav__icon'> </i>
+                          <span class="nav__name"> Work</span>
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#FAQ" class="nav__link">
+                        <i class='bx bx-question-mark nav__icon'> </i>
+                          <span class="nav__name">FAQ</span>
+                      </a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="contact us.html" class="nav__link icon-hover"style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);">
+                        <i class='bx bx-message-square-detail nav__icon'></i>
+                        <span class="nav__name">Contact us</span>
+                    </a>
+                </li>
+                </ul>
+                <button class="button-2" style="--clr: #00ad54;">
+                  <span class="button-decor-2"></span>
+                  <div class="button-content-2">
+                      <div class="button__icon-2">
+                          <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="24">
+                              <circle opacity="0.5" cx="25" cy="25" r="23" fill="url(#icon-payments-cat_svg__paint0_linear_1141_21101)"></circle>
+                              <mask id="icon-payments-cat_svg__a" fill="#fff">
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z">
+                                  </path>
+                              </mask>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z" fill="#fff"></path>
+                              <path d="M25.958 20.962l-1.47-1.632 1.47 1.632zm2.067.109l-1.632 1.469 1.632-1.469zm-.109 2.068l-1.469-1.633 1.47 1.633zm-5.154 4.638l-1.469-1.632 1.469 1.632zm-.276 1.841l-1.883 1.13 1.883-1.13zM34.42 15.93l-2.084-.695 2.084.695zm-19.725 6.42l18.568-6.189-1.39-4.167-18.567 6.19 1.389 4.166zm5.265 1.75l-5.12-3.072-2.26 3.766 5.12 3.072 2.26-3.766zm2.072 3.348l5.394-4.854-2.938-3.264-5.394 4.854 2.938 3.264zm5.394-4.854a.732.732 0 01-1.034-.054l3.265-2.938a3.66 3.66 0 00-5.17-.272l2.939 3.265zm-1.034-.054a.732.732 0 01.054-1.034l2.938 3.265a3.66 3.66 0 00.273-5.169l-3.265 2.938zm.054-1.034l-5.154 4.639 2.938 3.264 5.154-4.638-2.938-3.265zm1.023 12.152l-3.101-5.17-3.766 2.26 3.101 5.17 3.766-2.26zm4.867-18.423l-6.189 18.568 4.167 1.389 6.19-18.568-4.168-1.389zm-8.633 20.682c1.61 2.682 5.622 2.241 6.611-.725l-4.167-1.39a.732.732 0 011.322-.144l-3.766 2.26zm-6.003-8.05a3.66 3.66 0 004.332-.419l-2.938-3.264a.732.732 0 01.866-.084l-2.26 3.766zm3.592-1.722a3.66 3.66 0 00-.69 4.603l3.766-2.26c.18.301.122.687-.138.921l-2.938-3.264zm11.97-9.984a.732.732 0 01-.925-.926l4.166 1.389c.954-2.861-1.768-5.583-4.63-4.63l1.39 4.167zm-19.956 2.022c-2.967.99-3.407 5.003-.726 6.611l2.26-3.766a.732.732 0 01-.145 1.322l-1.39-4.167z" fill="#fff" mask="url(#icon-payments-cat_svg__a)"></path>
+                              <defs>
+                                  <linearGradient id="icon-payments-cat_svg__paint0_linear_1141_21101" x1="25" y1="2" x2="25" y2="48" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#fff" stop-opacity="0.71"></stop>
+                                      <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                                  </linearGradient>
+                              </defs>
+                          </svg>
+                      </div>
+                      <span class="button__text-2">Donate</span>
+                  </div>
+              </button>
+            </div>
+        </div>
+    </nav>
+  </header>
+    <main>
+      <section>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/first img.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+                      <div class="bg-text">
+                          <h2>Join Us In<br>Making a<br>Difference</h2>
+                          <h5 class="text-mute">Changing lives, one Act of kindness at a time.</h5>
+                          <button class="button" style="--clr: #00ad54;">
+                              <span class="button-decor"></span>
+                              <div class="button-content">
+                                  <div class="button__icon">
+                                      <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="24">
+                                          <circle opacity="0.5" cx="25" cy="25" r="23" fill="url(#icon-payments-cat_svg__paint0_linear_1141_21101)"></circle>
+                                          <mask id="icon-payments-cat_svg__a" fill="#fff">
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z">
+                                              </path>
+                                          </mask>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z" fill="#fff"></path>
+                                          <path d="M25.958 20.962l-1.47-1.632 1.47 1.632zm2.067.109l-1.632 1.469 1.632-1.469zm-.109 2.068l-1.469-1.633 1.47 1.633zm-5.154 4.638l-1.469-1.632 1.469 1.632zm-.276 1.841l-1.883 1.13 1.883-1.13zM34.42 15.93l-2.084-.695 2.084.695zm-19.725 6.42l18.568-6.189-1.39-4.167-18.567 6.19 1.389 4.166zm5.265 1.75l-5.12-3.072-2.26 3.766 5.12 3.072 2.26-3.766zm2.072 3.348l5.394-4.854-2.938-3.264-5.394 4.854 2.938 3.264zm5.394-4.854a.732.732 0 01-1.034-.054l3.265-2.938a3.66 3.66 0 00-5.17-.272l2.939 3.265zm-1.034-.054a.732.732 0 01.054-1.034l2.938 3.265a3.66 3.66 0 00.273-5.169l-3.265 2.938zm.054-1.034l-5.154 4.639 2.938 3.264 5.154-4.638-2.938-3.265zm1.023 12.152l-3.101-5.17-3.766 2.26 3.101 5.17 3.766-2.26zm4.867-18.423l-6.189 18.568 4.167 1.389 6.19-18.568-4.168-1.389zm-8.633 20.682c1.61 2.682 5.622 2.241 6.611-.725l-4.167-1.39a.732.732 0 011.322-.144l-3.766 2.26zm-6.003-8.05a3.66 3.66 0 004.332-.419l-2.938-3.264a.732.732 0 01.866-.084l-2.26 3.766zm3.592-1.722a3.66 3.66 0 00-.69 4.603l3.766-2.26c.18.301.122.687-.138.921l-2.938-3.264zm11.97-9.984a.732.732 0 01-.925-.926l4.166 1.389c.954-2.861-1.768-5.583-4.63-4.63l1.39 4.167zm-19.956 2.022c-2.967.99-3.407 5.003-.726 6.611l2.26-3.766a.732.732 0 01-.145 1.322l-1.39-4.167z" fill="#fff" mask="url(#icon-payments-cat_svg__a)"></path>
+                                          <defs>
+                                              <linearGradient id="icon-payments-cat_svg__paint0_linear_1141_21101" x1="25" y1="2" x2="25" y2="48" gradientUnits="userSpaceOnUse">
+                                                  <stop stop-color="#fff" stop-opacity="0.71"></stop>
+                                                  <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                                              </linearGradient>
+                                          </defs>
+                                      </svg>
+                                  </div>
+                                  <span class="button__text">Donate</span>
+                              </div>
+                          </button>
+                      </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/99.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+                      <div class="bg-text">
+                          <h2>Join Us In<br>Making a<br>Difference</h2>
+                          <h5 class="text-mute">Changing lives, one Act of kindness at a time.</h5>
+                          <button class="button" style="--clr: #00ad54;">
+                              <span class="button-decor"></span>
+                              <div class="button-content">
+                                  <div class="button__icon">
+                                      <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="24">
+                                          <circle opacity="0.5" cx="25" cy="25" r="23" fill="url(#icon-payments-cat_svg__paint0_linear_1141_21101)"></circle>
+                                          <mask id="icon-payments-cat_svg__a" fill="#fff">
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z">
+                                              </path>
+                                          </mask>
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z" fill="#fff"></path>
+                                          <path d="M25.958 20.962l-1.47-1.632 1.47 1.632zm2.067.109l-1.632 1.469 1.632-1.469zm-.109 2.068l-1.469-1.633 1.47 1.633zm-5.154 4.638l-1.469-1.632 1.469 1.632zm-.276 1.841l-1.883 1.13 1.883-1.13zM34.42 15.93l-2.084-.695 2.084.695zm-19.725 6.42l18.568-6.189-1.39-4.167-18.567 6.19 1.389 4.166zm5.265 1.75l-5.12-3.072-2.26 3.766 5.12 3.072 2.26-3.766zm2.072 3.348l5.394-4.854-2.938-3.264-5.394 4.854 2.938 3.264zm5.394-4.854a.732.732 0 01-1.034-.054l3.265-2.938a3.66 3.66 0 00-5.17-.272l2.939 3.265zm-1.034-.054a.732.732 0 01.054-1.034l2.938 3.265a3.66 3.66 0 00.273-5.169l-3.265 2.938zm.054-1.034l-5.154 4.639 2.938 3.264 5.154-4.638-2.938-3.265zm1.023 12.152l-3.101-5.17-3.766 2.26 3.101 5.17 3.766-2.26zm4.867-18.423l-6.189 18.568 4.167 1.389 6.19-18.568-4.168-1.389zm-8.633 20.682c1.61 2.682 5.622 2.241 6.611-.725l-4.167-1.39a.732.732 0 011.322-.144l-3.766 2.26zm-6.003-8.05a3.66 3.66 0 004.332-.419l-2.938-3.264a.732.732 0 01.866-.084l-2.26 3.766zm3.592-1.722a3.66 3.66 0 00-.69 4.603l3.766-2.26c.18.301.122.687-.138.921l-2.938-3.264zm11.97-9.984a.732.732 0 01-.925-.926l4.166 1.389c.954-2.861-1.768-5.583-4.63-4.63l1.39 4.167zm-19.956 2.022c-2.967.99-3.407 5.003-.726 6.611l2.26-3.766a.732.732 0 01-.145 1.322l-1.39-4.167z" fill="#fff" mask="url(#icon-payments-cat_svg__a)"></path>
+                                          <defs>
+                                              <linearGradient id="icon-payments-cat_svg__paint0_linear_1141_21101" x1="25" y1="2" x2="25" y2="48" gradientUnits="userSpaceOnUse">
+                                                  <stop stop-color="#fff" stop-opacity="0.71"></stop>
+                                                  <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                                              </linearGradient>
+                                          </defs>
+                                      </svg>
+                                  </div>
+                                  <span class="button__text">Donate</span>
+                              </div>
+                          </button>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+         
+        </div>
+    </section>
+      <section>
+      <div class="container text-center">
+        <h2 class="pt-3 pd-3" style="font:bolder">Our misson is succintly catured in <br>three pillars</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md pd-3 pt-2">
+            <i class='bx bxs-coin-stack bx-border-circle bx-md custom-coin' style="color: gold;"></i>
+            <h4>We fund</h4>
+           <p class="text">Through strategic funding, We
+            catalyze positive change in
+            underserved communities,
+            ensuring that essential resources
+            reach those who need them 
+            most.</p> 
+          </div>
+          <div class="col-sm-12 col-md pt-3">
+            <i class='bx bx-donate-heart bx-border-circle bx-md custom-donate' style="color: lightgreen;"></i>
+            <h4>WE PROVIDE CARE</h4>
+           <p class="text">we provide care compassionate
+            support for health, well-being, and
+            community development</p>
+          </div>
+          <div class="col-sm-12 col-md pt-3">
+            <i class='bx bxs-heart bx-border-circle bx-md custom-heart' style="color: red;"></i>
+            <h4>WE EMPOWER</h4>
+            <p class="text">
+            we empower individuals Through
+            education, skills development,
+            and sustainable initiatives,
+            fostering self-reliance and
+            resilience.</p>
+          </div>
+        </div>
+      </div>
+     </section> 
+      <section class="container section section__height" id="about" style="margin-bottom: 15pz;">
+                
+        <div class="row pt-4">
+          <div class="left">
+            <div data-aos="fade-right">
+            <img-fluid src="img/second img.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <div class="sec-content">
+              <div data-aos="zoom-in-down">
+              <h1 class="pt-3">Our Goals</h1><br>
+              <p class="text text-success">Join us in making a meaningful and sustainable
+                difference
+              </p>
+              <p class="text">We strive to empower underserved communities
+                through education, enhance health and well-being, promote
+                sustainable community development, provide life-enhacing 
+                skills, ensure rapid response to emergencies, champion
+                environment stewardship, cultivte youth empowerment and
+                leadership, advance womens's right's, alleviate Hunger
+                and food insecurity, and advocate for human rights on
+                a global scale.
+              </p>
+            
+                    <div class="button-container">
+          
+                  
+                  <button class="button-1" style="--clr: #00ad54;">
+                    <span class="button-decor-1"></span>
+                    <div class="button-content-1">
+                        <div class="button__icon-1">
+                            <svg viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" width="24">
+                                <circle opacity="0.5" cx="25" cy="25" r="23" fill="url(#icon-payments-cat_svg__paint0_linear_1141_21101)"></circle>
+                                <mask id="icon-payments-cat_svg__a" fill="#fff">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z">
+                                    </path>
+                                </mask>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.42 15.93c.382-1.145-.706-2.234-1.851-1.852l-18.568 6.189c-1.186.395-1.362 2-.29 2.644l5.12 3.072a1.464 1.464 0 001.733-.167l5.394-4.854a1.464 1.464 0 011.958 2.177l-5.154 4.638a1.464 1.464 0 00-.276 1.841l3.101 5.17c.644 1.072 2.25.896 2.645-.29L34.42 15.93z" fill="#fff"></path>
+                                <path d="M25.958 20.962l-1.47-1.632 1.47 1.632zm2.067.109l-1.632 1.469 1.632-1.469zm-.109 2.068l-1.469-1.633 1.47 1.633zm-5.154 4.638l-1.469-1.632 1.469 1.632zm-.276 1.841l-1.883 1.13 1.883-1.13zM34.42 15.93l-2.084-.695 2.084.695zm-19.725 6.42l18.568-6.189-1.39-4.167-18.567 6.19 1.389 4.166zm5.265 1.75l-5.12-3.072-2.26 3.766 5.12 3.072 2.26-3.766zm2.072 3.348l5.394-4.854-2.938-3.264-5.394 4.854 2.938 3.264zm5.394-4.854a.732.732 0 01-1.034-.054l3.265-2.938a3.66 3.66 0 00-5.17-.272l2.939 3.265zm-1.034-.054a.732.732 0 01.054-1.034l2.938 3.265a3.66 3.66 0 00.273-5.169l-3.265 2.938zm.054-1.034l-5.154 4.639 2.938 3.264 5.154-4.638-2.938-3.265zm1.023 12.152l-3.101-5.17-3.766 2.26 3.101 5.17 3.766-2.26zm4.867-18.423l-6.189 18.568 4.167 1.389 6.19-18.568-4.168-1.389zm-8.633 20.682c1.61 2.682 5.622 2.241 6.611-.725l-4.167-1.39a.732.732 0 011.322-.144l-3.766 2.26zm-6.003-8.05a3.66 3.66 0 004.332-.419l-2.938-3.264a.732.732 0 01.866-.084l-2.26 3.766zm3.592-1.722a3.66 3.66 0 00-.69 4.603l3.766-2.26c.18.301.122.687-.138.921l-2.938-3.264zm11.97-9.984a.732.732 0 01-.925-.926l4.166 1.389c.954-2.861-1.768-5.583-4.63-4.63l1.39 4.167zm-19.956 2.022c-2.967.99-3.407 5.003-.726 6.611l2.26-3.766a.732.732 0 01-.145 1.322l-1.39-4.167z" fill="#fff" mask="url(#icon-payments-cat_svg__a)"></path>
+                                <defs>
+                                    <linearGradient id="icon-payments-cat_svg__paint0_linear_1141_21101" x1="25" y1="2" x2="25" y2="48" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#fff" stop-opacity="0.71"></stop>
+                                        <stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="button__text-1">Donate</span>
+                    </div>
+                </button>
+                  </div>
+                  
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </section>
+      <section class="container section section__height" id="skills">
+       
+        <div class="container text-center">
+          <div class="row">
+
+          <div  class="col-sm-12 col-md pd-3 pt-2">
+         
+              <img-fluid src="img/third img.jpg" alt="Enhancing Health and Well-being">
+              <h3 class="text">Enhancing Health and Well-being</h3>
+              <p class="text">Through targeted initiatives,<br>
+                including scholarships and <br> 
+                resource allocation, we actively<br>
+                work to bridge educational<br>
+                gaps.</p>
+            
+          </div>
+  
+
+            <div  class="col-sm-12 col-md pd-3 pt-2">
+              <img-fluid src="img/4th img.jpg" alt="Empowerment Through Education">
+              <h3 class="text">Empowerment Through Education</h3>
+              <p class="text">We are committed to<br>
+                improving healthcare access in <br>
+                marginalized areas, ensuring<br>
+                that every individual receives<br>
+                the care they deserve</p>
+            </div>
+          
+
+            <div  class="col-sm-12 col-md pd-3 pt-2">
+               <h3 class="text">Alleviating Hunger and Food insecurity</h3>
+              <p class="text">We actively work to establish<br>
+                sustainable methods for food<br>
+                production, emphasizing<br> 
+                environmentally conscious<br>
+                practices.</p>
+
+             
+            </div>
+          
+        </div>
+      </div>
+      <div class="comtainer">
+        <img src="img/fourth img.jpg" alt="Alleviating Hunger and Food Insecurity " style="height:100vh; width:100%; object-fit: cover; position: relative; z-index: -1;">
+
+      </div>
+    
+      </section>
+    
+
+  
+      <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We are a non-profit dedicated to enhancing education for underprivileged children. Since our start, we’ve built 50 schools and provided scholarships to over 1,000 students. Our mission is to ensure every child has access to quality education.</p>
+
+                </div>
+                
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="About Us.html">About</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                        <li><a href="contact us.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: amponsahhayford42@gmail.com</p>
+                    <p>Phone: +123456789</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    </main>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
